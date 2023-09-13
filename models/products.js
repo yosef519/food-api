@@ -16,3 +16,7 @@ const Product = database.define("products", {
 });
 
 export default Product;
+
+export const getProduct = () => {
+  Product.findAll();
+};
